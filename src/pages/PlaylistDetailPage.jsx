@@ -34,7 +34,9 @@ const playlistsData = {
     level: "Αρχάριοι", 
     videosCount: 37,
     videos: [
-        { id: 1, title: "HTML Video 1 (Placeholder)", duration: "08:00", completed: false, youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhrjjZxVEAox1k1mTfYxMIZA&si=XggC-P8G_6oGitpp" },
+        { id: 1, title: "Εισαγωγή στην HTML !", duration: "13:30", completed: false, youtubeLink: "https://youtu.be/Y-Gu2Ni4su8?si=-AOsOOYJQJW0tifU" },
+        { id: 14, title: "Εισαγωγή στη CSS !", duration: "12:00", completed: false, youtubeLink: "https://youtu.be/JvNfkPfVgmM?si=izeQ5K9Ooa8A8vfw" },
+
     ],
     imageText: "Web design concept with HTML and CSS elements",
     imageUrl: webDevLink,
@@ -47,7 +49,11 @@ const playlistsData = {
     category: "Java", 
     level: "Όλα τα επίπεδα", 
     videosCount: 76,
-    videos: [],
+     videos: [
+        { id: 1, title: "Εισαγωγή στην Java !", duration: "15:30", completed: false, youtubeLink: "https://youtu.be/YxwvbKmKvNI?si=AuaMXNGWxzLCExL5" },
+        { id: 2, title: "Μεταβλητές !", duration: "11:00", completed: false, youtubeLink: "https://youtu.be/V4w5exdgP0c?si=E8yCn7EyJBjTesvj" },
+        { id: 26, title: "Αντικειμενοστραφής Προγραμματισμός", duration: "09:00", completed: false, youtubeLink: "https://youtu.be/2XyZMS_T_xc?si=cAcPGHbq68HU9nYv"},
+      ],
     imageText: "Java code on a dark background with coffee cup icon",
     imageUrl: javaLink,
     longDescription: "Αυτή η εκτενής σειρά 76 βίντεο σε καθοδηγεί στην εκμάθηση της Java. Ξεκινώντας από τα βασικά (μεταβλητές, τελεστές, έλεγχος ροής), προχωρά σε αντικειμενοστραφή προγραμματισμό (κλάσεις, αντικείμενα, κληρονομικότητα, πολυμορφισμός), διαχείριση εξαιρέσεων, συλλογές (collections framework) και άλλα σημαντικά θέματα της Java.",
@@ -59,7 +65,9 @@ const playlistsData = {
     category: "C", 
     level: "Αρχάριοι/Μέσο", 
     videosCount: 23,
-    videos: [],
+    videos: [ 
+      { id: 1, title: "Εισαγωγή | Hello World", duration: "04:00", completed: false, youtubeLink: "https://youtu.be/6FV9D27_xvc?si=ASKvc3trVLjuy7DF"},
+      { id: 2, title: "Μάθε τα πάντα για τις Μεταβλητές", duration: "10:30", completed: false, youtubeLink:"https://youtu.be/_1ijs1cDJf8?si=dsT9Ff7dYJ9UYZAQ" },],
     imageText: "C programming code with a metallic texture",
     imageUrl: cLink,
     longDescription: "Μέσα από 23 βίντεο, αυτή η σειρά σε εισάγει στον κόσμο της C. Θα μάθεις για δείκτες (pointers), διαχείριση μνήμης, δομές, αρχεία και τις θεμελιώδεις έννοιες που κάνουν τη C μια ισχυρή και διαχρονική γλώσσα προγραμματισμού.",
@@ -71,7 +79,9 @@ const playlistsData = {
     category: "Databases", 
     level: "Μέσο", 
     videosCount: 12,
-    videos: [],
+    videos: [
+      { id: 1, title: "Εισαγωγή & Εγκατάσταση", duration: "12:30", completed: false, youtubeLink: "https://youtu.be/duw5oCjgnag?si=KVXAAJKYFJ2c7bu6"},
+    ],
     imageText: "MongoDB logo with data streams in background",
     imageUrl: mongoLink,
     longDescription: "Αυτή η σειρά 12 βίντεο εστιάζει στη MongoDB, μια δημοφιλή NoSQL βάση δεδομένων. Θα μάθεις για τα έγγραφα (documents), τις συλλογές (collections), τις βασικές εντολές CRUD (Create, Read, Update, Delete), indexing, aggregation framework και πώς να χρησιμοποιείς τη MongoDB στις εφαρμογές σου.",
@@ -83,7 +93,9 @@ const playlistsData = {
     category: "C++", 
     level: "Αρχάριοι/Μέσο", 
     videosCount: 40, 
-    videos: [],
+    videos: [
+      { id: 1, title: "Εισαγωγή | Hello World", duration: "15:30", completed: false, youtubeLink: "https://youtu.be/ewJETyqNxtI?si=aNw3kDXSo2Mv03Np"},
+      { id: 2, title: "Μάθε τα πάντα για τις Μεταβλητές", duration: "16:00", completed: false, youtubeLink:"https://youtu.be/vUG1CMm-Z4c?si=cG1BmnJ3A6gyL0Cm" },],
     imageText: "C++ language logo with circuit board",
     imageUrl: cppLink,
     longDescription:"Μάθε C++ μέσα από τη δική μου σειρά μαθημάτων στα ελληνικά, ιδανική για αρχάριους! Η C++ είναι μια πανίσχυρη γλώσσα προγραμματισμού, που χρησιμοποιείται σε video games, λειτουργικά συστήματα, εφαρμογές υψηλής απόδοσης και ενσωματωμένα συστήματα. Μέσα από απλά, κατανοητά βίντεο, θα αποκτήσεις σταθερές βάσεις και θα δεις πώς μπορείς να αξιοποιήσεις τη C++ σε πραγματικά projects. Ξεκίνα σήμερα !",
@@ -213,8 +225,15 @@ const PlaylistDetailPage = () => {
                   </div>
                   <div className="flex items-center flex-shrink-0">
                      {video.completed && <CheckSquare className="h-5 w-5 text-green-500 mr-3" />}
-                    <Button as="a" href={video.youtubeLink} target="_blank" rel="noopener noreferrer" variant="ghost" size="sm" className="text-primary hover:bg-primary/10 hover:text-primary-foreground">
+                    <Button 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    variant="ghost" size="sm" 
+                    className="text-primary hover:bg-primary/10 hover:text-primary-foreground"
+                    >
+                    <a href={video.youtubeLink}>
                       <PlayCircle className="h-5 w-5" />
+                    </a>
                     </Button>
                   </div>
                 </motion.div>
