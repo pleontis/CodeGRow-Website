@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Code, Youtube, BookOpen, ListVideo } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { Typewriter } from 'react-simple-typewriter'
+
 
 const HeroSection = () => {
   return (
@@ -45,7 +47,16 @@ const HeroSection = () => {
             className="mb-6 flex items-center justify-center space-x-3 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg"
           >
             <Code className="h-6 w-6 text-blue-600 opacity-50" />
-            <span className="text-sm font-medium text-white">Μάθετε προγραμματισμό στα ελληνικά</span>
+            
+            <span className="text-sm font-medium text-white"><Typewriter
+        words={['Μάθετε προγραμματισμό στα ελληνικά']}
+        loop={Infinity}
+        cursor
+        cursorStyle="|"
+        typeSpeed={120}
+        deleteSpeed={120}
+        delaySpeed={1000}
+      /></span>
           </motion.div>
 
           <motion.h1
