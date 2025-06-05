@@ -26,7 +26,7 @@ Welcome to the official repository for **CodeGRow**, a platform dedicated to fos
 
 * **Deployment:**
 
-  * [Netlify](https://www.netlify.com/) – Continuous Deployment and Hosting
+  *
 
 ---
 
