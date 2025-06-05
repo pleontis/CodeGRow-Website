@@ -74,10 +74,12 @@ const BookPage = () => {
             </p>
             <div className="mt-8">
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-10 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105">
+                <a target='_blank' className="inline-flex items-center justify-center" href="https://buy.stripe.com/bJe00jgSU8jb38b2Qj0kE00">
                 <Download className="mr-2 h-5 w-5" />
-                Αγόρασε το Βιβλίο ( σύντομα διαθέσιμο )
+                Αγόρασε το Βιβλίο
+                </a>
               </Button>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">Ηλεκτρονική μορφή (PDF) και έντυπη έκδοση.</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">Ηλεκτρονική μορφή (PDF).</p>
             </div>
           </motion.div>
         </div>
