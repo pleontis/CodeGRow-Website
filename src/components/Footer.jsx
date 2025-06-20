@@ -87,7 +87,7 @@ const Footer = () => {
             &copy; {currentYear} CodeGRow. Με επιφύλαξη παντός δικαιώματος
           </p>
           <p className="text-xs text-gray-600 dark:text-gray-700 mt-1">
-            Κατασκευάστηκε με αγάπη στον προγραμματισμό
+            Hosted By pointer.gr
           </p>
         </div>
       </div>
