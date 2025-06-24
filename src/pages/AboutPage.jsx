@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Users, Zap, Target, Heart, Code, Youtube as YoutubeIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import imgUrl from '../img/IMG_4547.png';
 
 const AboutPage = () => {
   const discordLogoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/07152c0c-650e-4780-a58d-0ba00c109e3d/ccb9eac3935f7e3231c0840b98d1b5df.png";
@@ -35,7 +36,7 @@ const AboutPage = () => {
             <img  
               className="w-full h-auto rounded-xl shadow-2xl object-cover"
               alt="Panagiotis Leontis working on CodeGRow content"
-              src="https://images.unsplash.com/photo-1650278795309-26295c74cf2b" />
+              src={imgUrl} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -48,7 +49,7 @@ const AboutPage = () => {
               Το CodeGRow ξεκίνησε από μια απλή ιδέα: να δημιουργήσω έναν χώρο όπου οι Έλληνες, ανεξαρτήτως εμπειρίας, μπορούν να μάθουν προγραμματισμό με σαφήνεια και υποστήριξη. Είμαι ένας προγραμματιστής που πιστεύει στη δύναμη της γνώσης και της κοινότητας.
             </p>
             <p className="text-md mb-4 leading-relaxed">
-            Ως φοιτητής Πληροφορικής, ήρθα αντιμέτωπος με την έλλειψη δομημένου, ποιοτικού και ταυτόχρονα κατανοητού υλικού στα ελληνικά. Πολλά από τα διαθέσιμα μέσα ήταν αποσπασματικά, παρωχημένα ή πολύπλοκα για τους νέους στον χώρο. Έτσι γεννήθηκε η ιδέα του CodeGRow – ως η πρώτη σπίθα σε μια προσπάθεια να καλυφθεί αυτό το κενό.
+            Ως φοιτητής Πληροφορικής, ήρθα αντιμέτωπος με την έλλειψη δομημένου, ποιοτικού και ταυτόχρονα κατανοητού υλικού στα ελληνικά. Πολλά από τα διαθέσιμα μέσα ήταν αποσπασματικά, παρωχημένα ή πολύπλοκα για τους νέους στον χώρο. Έτσι γεννήθηκε η ιδέα του CodeGRow, ως η πρώτη σπίθα σε μια προσπάθεια να καλυφθεί αυτό το κενό.
             </p>
             <p className="text-md leading-relaxed">
               Μέσα από το κανάλι μου στο YouTube, τις playlists, το βιβλίο και τους πόρους που προσφέρω, στοχεύω να απομυθοποιήσω τον προγραμματισμό και να εμπνεύσω την επόμενη γενιά Ελλήνων developers.
