@@ -11,6 +11,7 @@ import mongoLink from "../img/mongodb.png"
 import pythonLink from "../img/pythonLogo.png";
 import javaLink from "../img/javaLogo.png";
 import webDevLink from "../img/webDev.png";
+import jsLink from "../img/jsLogo.png";
 import { Helmet } from 'react-helmet';
 
 const playlistsData = [
@@ -58,6 +59,17 @@ const playlistsData = [
     imageUrl: cLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhp24SFf7DXTaX_xo4e9kxbO&si=i575A72TUlAe29S6"
   },
+  {
+    id:"javascript",
+    title:"Εκμάθηση JavaScript",
+    description:"Σειρά 80 βίντεο για να ξεκινήστε το ταξίδι σας στον κόσμο της JavaScript και του Web Development.",
+    category:"JavaScript",
+    level: "Μέσο/Προχωρημένο",
+    videos:80,
+    imageText: "JavaScript logo",
+    imageUrl: jsLink,
+    youtubeLink: "https://www.youtube.com/playlist?list=PLLazhr7ULbhq8dq-pxbJCZJU2tRVro519"
+  },
   { 
     id: "c++", 
     title: "Εκμάθηση C++", 
@@ -79,8 +91,7 @@ const playlistsData = [
     imageText: "MongoDB leaf logo on server background",
     imageUrl: mongoLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbho40ZbcogPRyPzlvIYaV8x-&si=EKSVNUNDCaZCh3EN"
-  },
-];
+  },];
 
 const PlaylistsPage = () => {
   const [searchTerm, setSearchTerm] = React.useState("");

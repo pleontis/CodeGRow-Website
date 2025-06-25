@@ -10,6 +10,7 @@ import mongoLink from "../img/mongodb.png"
 import pythonLink from "../img/pythonLogo.png";
 import javaLink from "../img/javaLogo.png";
 import webDevLink from "../img/webDev.png";
+import jsLink from "../img/jsLogo.png";
 
 const playlistsData = {
   python: { 
@@ -101,7 +102,23 @@ const playlistsData = {
     longDescription:"Μάθε C++ μέσα από τη δική μου σειρά μαθημάτων στα ελληνικά, ιδανική για αρχάριους! Η C++ είναι μια πανίσχυρη γλώσσα προγραμματισμού, που χρησιμοποιείται σε video games, λειτουργικά συστήματα, εφαρμογές υψηλής απόδοσης και ενσωματωμένα συστήματα. Μέσα από απλά, κατανοητά βίντεο, θα αποκτήσεις σταθερές βάσεις και θα δεις πώς μπορείς να αξιοποιήσεις τη C++ σε πραγματικά projects. Ξεκίνα σήμερα !",
     playlistYoutubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhrIKTQOG88CndlqkkM-gn2N&si=HMMYOaDPZGUWrV6I"
 
-  }
+  },
+  javascript:{
+    title:"Εκμάθηση JavaScript",
+    description:"Σειρά 80 βίντεο για να ξεκινήστε το ταξίδι σας στον κόσμο της JavaScript και του Web Development.",
+    category:"JavaScript",
+    level: "Μέσο/Προχωρημένο",
+    videosCount: 80,
+    videos:[
+      { id: 1, title: "Εισαγωγή Στη JavaSccript ! | Hello World", duration: "17:30", completed: false, youtubeLink: "https://youtu.be/9fQb_HJ6dSk"},
+      { id: 2, title: "Μάθε τα πάντα για τις Μεταβλητές", duration: "17:30", completed: false, youtubeLink:"https://youtu.be/JeNCcy9HBb0" },
+      { id: 3, title: "Κάνε Αριθμητικές Πράξεις !", duration: "13:30", completed: false, youtubeLink:"https://youtu.be/FnxlnP78Se8" },
+      { id: 4, title: "Διάβασε την Είσοδο του Χρήστη | User Input", duration: "10:00", completed: false, youtubeLink:"https://youtu.be/8lB7gssWfmA" },
+      ],
+    imageUrl:jsLink,
+    longDescription:"Μάθε JavaScript μέσα από τη δική μου σειρά μαθημάτων στα ελληνικά, ιδανική για αρχάριους! Η JavaScript είναι μία από τις πιο δημοφιλείς γλώσσες προγραμματισμού και αποτελεί βασικό εργαλείο για την ανάπτυξη δυναμικών ιστοσελίδων και web εφαρμογών. Μέσα από απλά και κατανοητά βίντεο, θα αποκτήσεις σταθερές βάσεις και θα μάθεις πώς να χρησιμοποιείς τη JavaScript για να δώσεις διαδραστικότητα και λειτουργικότητα στις δικές σου ιστοσελίδες. Ξεκίνα σήμερα και μπες δυναμικά στον κόσμο του προγραμματισμού!",
+    playlistYoutubeLink: "https://www.youtube.com/playlist?list=PLLazhr7ULbhq8dq-pxbJCZJU2tRVro519"
+  },
 };
 
 const PlaylistDetailPage = () => {

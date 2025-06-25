@@ -30,7 +30,7 @@ const HomePage = () => {
   const playlists = [
     { id: "python", title: "Εισαγωγή στην Python", description: "Μάθετε τα βασικά της Python, μιας από τις πιο δημοφιλείς γλώσσες προγραμματισμού.", imageText: "Python Logo",img: pythonURL},
     { id: "java", title: "Εισαγωγή στη Java", description: "Ανακαλύψτε τη δύναμη της Java και την χρήση της στις δομές δεδομένων.", imageText: "Java Logo",img:javaURL},
-    { id: "javascript", title: "JavaScript για Αρχάριους", description: "Ξεκινήστε το ταξίδι σας στον κόσμο της JavaScript και του web development.", imageText: "JavaScript Logo",img:jsURL},
+    { id: "javascript", title: "JavaScript για Αρχάριους", description: "Ξεκινήστε το ταξίδι σας στον κόσμο της JavaScript και του Web Development.", imageText: "JavaScript Logo",img:jsURL},
   ];
 
   return (
