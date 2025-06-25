@@ -5,12 +5,35 @@ import { Users, Zap, Target, Heart, Code, Youtube as YoutubeIcon } from 'lucide-
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import imgUrl from '../img/IMG_4547.png';
+import { Helmet } from 'react-helmet';
 
 const AboutPage = () => {
   const discordLogoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/07152c0c-650e-4780-a58d-0ba00c109e3d/ccb9eac3935f7e3231c0840b98d1b5df.png";
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 py-20 md:py-28">
+      <Helmet>
+  <title>Σχετικά με το CodeGrow</title>
+  <meta
+    name="description"
+    content="Μάθε περισσότερα για την CodeGrow, την ελληνική πλατφόρμα που διδάσκει προγραμματισμό σε όλους, με ποιοτικό υλικό στα ελληνικά."
+  />
+  <meta
+    name="keywords"
+    content="codegrow ποιος ειναι, codegrow, ελληνική εκμάθηση προγραμματισμού, αποστολή codegrow, ελληνικά tutorials, προγραμματισμός, ελληνική κοινότητα"
+  />
+  <link rel="canonical" href="https://codegrow.gr/about" />
+  <meta property="og:title" content="Σχετικά με το CodeGrow, η Ιστορία μου και ο Στόχος μου." />
+  <meta property="og:description" content="Δες πώς ξεκίνησε το CodeGrow, ποιος είμαι και πώς βοηθάω την ελληνική κοινότητα να μάθει προγραμματισμό." />
+  <meta property="og:image" content="https://codegrow.gr/img/og_image.png" />
+  <meta property="og:url" content="https://codegrow.gr/about" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:title" content="Σχετικά με το CodeGrow, η Ιστορία μου" />
+  <meta name="twitter:description" content="Μάθε πως γεννήθηκε το CodeGrow. Ελληνικά μαθήματα προγραμματισμού για όλους." />
+  <meta name="twitter:image" content="https://codegrow.gr/img/og_image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

@@ -11,6 +11,7 @@ import mongoLink from "../img/mongodb.png"
 import pythonLink from "../img/pythonLogo.png";
 import javaLink from "../img/javaLogo.png";
 import webDevLink from "../img/webDev.png";
+import { Helmet } from 'react-helmet';
 
 const playlistsData = [
   { 
@@ -96,6 +97,28 @@ const PlaylistsPage = () => {
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen py-20 md:py-28">
+<Helmet>
+  <title>Playlists Προγραμματισμού CodeGrow</title>
+  <meta
+    name="description"
+    content="Ανακάλυψε όλες τις Playlists προγραμματισμού της CodeGrow. Μάθε Python, JavaScript, Java και άλλα με βήμα-βήμα tutorials στα ελληνικά."
+  />
+  <meta
+    name="keywords"
+    content="playlists προγραμματισμού, python tutorial greek,video tutorials ελληνικά, codegrow playlists, μάθε python, μάθε προγραμματισμό, javascript ελληνικά, java tutorials"
+  />
+  <link rel="canonical" href="https://codegrow.gr/playlists" />
+  <meta property="og:title" content="Playlists Προγραμματισμού - Μάθε Κώδικα στα Ελληνικά | CodeGrow" />
+  <meta property="og:description" content="Όλες οι εκπαιδευτικές σειρές προγραμματισμού στα ελληνικά. Ξεκίνα να μαθαίνεις σήμερα με το CodeGrow." />
+  <meta property="og:image" content="https://codegrow.gr/img/og_image.png" />
+  <meta property="og:url" content="https://codegrow.gr/playlists" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:title" content="Playlists Προγραμματισμού - CodeGrow" />
+  <meta name="twitter:description" content="Εκπαιδευτικές σειρές για Python, JavaScript, Java κλπ. όλα στα ελληνικά." />
+  <meta name="twitter:image" content="https://codegrow.gr/img/og_image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

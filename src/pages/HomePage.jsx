@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { Lightbulb, BookOpen, Users, PlayCircle } from 'lucide-react';
 import pythonURL from '../img/python.jpg';
 import jsURL from '../img/js.jpg';
@@ -34,6 +35,21 @@ const HomePage = () => {
 
   return (
     <div className="bg-background dark:bg-background">
+      <Helmet>
+        <title>CodeGrow - Μάθε Προγραμματισμό στα Ελληνικά</title>
+        <meta name="description" content="Μάθε προγραμματισμό στα ελληνικά με Python, JavaScript, Java και άλλα. Δωρεάν μαθήματα, tutorials και εκπαιδευτικό υλικό από την CodeGrow." />
+        <meta name="keywords" content="προγραμματισμος, προγραμματισμοσ, codegrow, coding greek, coding, coding tutorial greek, προγραμματισμος ελληνικα, python ελληνικα, java ελληνικα, codegrow python, μαθηματα προγραμματισμου, CodeGrow, προγραμματιστης, python tutorial greek, javascript greek, python greek" />
+        <link rel="canonical" href="https://codegrow.gr/" />
+        <meta property="og:title" content="CodeGrow - Μάθε Προγραμματισμό στα Ελληνικά" />
+        <meta property="og:description" content="Η ελληνική πλατφόρμα για την εκμάθηση προγραμματισμού. Ξεκίνησε τώρα με Python, JavaScript και άλλα." />
+        <meta property="og:image" content="https://codegrow.gr/img/og_image.png" />
+        <meta property="og:url" content="https://codegrow.gr/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="CodeGrow - Μάθε Προγραμματισμό στα Ελληνικά" />
+        <meta name="twitter:description" content="Μάθε προγραμματισμό στα ελληνικά με tutorials, playlists και βιβλία από την CodeGrow." />
+        <meta name="twitter:image" content="https://codegrow.gr/img/og_image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <HeroSection />
 
       <section className="py-16 md:py-24">

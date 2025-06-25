@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Download, CheckCircle, BookOpen, Star } from 'lucide-react';
 import bookURL from '../img/book.png';
+import { Helmet } from 'react-helmet';
 
 const BookPage = () => {
 
@@ -22,6 +23,28 @@ const BookPage = () => {
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 py-20 md:py-28">
+      <Helmet>
+  <title>Βιβλίο του CodeGrow</title>
+  <meta
+    name="description"
+    content="Ανακάλυψε το βιβλίο προγραμματισμού CodeGrow. Γραμμένο στα ελληνικά, με πρακτικά παραδείγματα!"
+  />
+  <meta
+    name="keywords"
+    content="βιβλίο προγραμματισμού, προγραμματισμός ελληνικά, codegrow βιβλίο, python βιβλίο ελληνικά, java, javascript, μάθε προγραμματισμό, ελληνικά tutorials"
+  />
+  <link rel="canonical" href="https://codegrow.gr/book" />
+  <meta property="og:title" content="CodeGrow Βιβλίο - Μάθε Προγραμματισμό στα Ελληνικά" />
+  <meta property="og:description" content="Ένα μοναδικό βιβλίο προγραμματισμού στα ελληνικά. Εύκολα παραδείγματα και ασκήσεις για αρχάριους και προχωρημένους." />
+  <meta property="og:image" content="https://codegrow.gr/img/og_image.png" />
+  <meta property="og:url" content="https://codegrow.gr/book" />
+  <meta property="og:type" content="product" />
+  <meta name="twitter:title" content="CodeGrow Βιβλίο - Μάθε Προγραμματισμό στα Ελληνικά" />
+  <meta name="twitter:description" content="Δες το νέο βιβλίο προγραμματισμού της CodeGrow. Στα ελληνικά, με πρακτικά projects και tutorials." />
+  <meta name="twitter:image" content="https://codegrow.gr/img/og_image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
