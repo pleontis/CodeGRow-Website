@@ -62,7 +62,7 @@ const playlistsData = [
   {
     id:"javascript",
     title:"Εκμάθηση JavaScript",
-    description:"Σειρά 80 βίντεο για να ξεκινήστε το ταξίδι σας στον κόσμο της JavaScript και του Web Development.",
+    description:"Σειρά 80 βίντεο για να ξεκινήσεις το ταξίδι σου στον κόσμο της JavaScript και του Web Development.",
     category:"JavaScript",
     level: "Μέσο/Προχωρημένο",
     videos:80,
