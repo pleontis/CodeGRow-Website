@@ -19,8 +19,8 @@ const Footer = () => {
               Μαθαίνω προγραμματισμό στα ελληνικά. Απλά και κατανοητά.
             </p>
             <br />
-            <a href="mailto:codegrow00@gmail.com" target='_blank' className="text-sm text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
-              codegrow00@gmail.com
+            <a href="mailto:contact@codegrow.gr" target='_blank' className="text-sm text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
+              contact@codegrow.gr
             </a>
           </div>
           <div>
