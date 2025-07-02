@@ -28,6 +28,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/playlists" className="hover:text-primary transition-colors">Playlists</Link></li>
               <li><Link to="/book" className="hover:text-primary transition-colors">Το Βιβλίο μου</Link></li>
+              <li><Link to="/products" className="hover:text-primary transition-colors">Ψηφιακά Προϊόντα</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">Σχετικά με Εμένα</Link></li>
             </ul>
           </div>

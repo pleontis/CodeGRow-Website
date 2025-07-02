@@ -24,11 +24,10 @@ const BookPage = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 py-20 md:py-28">
       <Helmet>
-  <title>Βιβλίο του CodeGrow</title>
-  <meta
-    name="description"
-    content="Ανακάλυψε το βιβλίο προγραμματισμού CodeGrow. Γραμμένο στα ελληνικά, με πρακτικά παραδείγματα!"
-  />
+        <title>Βιβλίο του CodeGrow</title>
+        <meta name="description"
+              content="Ανακάλυψε το βιβλίο προγραμματισμού CodeGrow. Γραμμένο στα ελληνικά, με πρακτικά παραδείγματα!"
+        />
   <meta
     name="keywords"
     content="βιβλίο προγραμματισμού, προγραμματισμός ελληνικά, codegrow βιβλίο, python βιβλίο ελληνικά, java, javascript, μάθε προγραμματισμό, ελληνικά tutorials"
@@ -40,7 +39,7 @@ const BookPage = () => {
   <meta property="og:url" content="https://codegrow.gr/book" />
   <meta property="og:type" content="product" />
   <meta name="twitter:title" content="CodeGrow Βιβλίο - Μάθε Προγραμματισμό στα Ελληνικά" />
-  <meta name="twitter:description" content="Δες το νέο βιβλίο προγραμματισμού της CodeGrow. Στα ελληνικά, με πρακτικά projects και tutorials." />
+  <meta name="twitter:description" content="Δες το νέο βιβλίο προγραμματισμού του CodeGrow. Στα ελληνικά, με πρακτικά projects και tutorials." />
   <meta name="twitter:image" content="https://codegrow.gr/img/og_image.png" />
   <meta name="twitter:card" content="summary_large_image" />
 </Helmet>
@@ -76,7 +75,7 @@ const BookPage = () => {
     </div>
   </motion.div>
 
-
+          
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -93,7 +92,7 @@ const BookPage = () => {
               ))}
             </ul>
             <p className="text-lg mb-4">
-              Είτε είσαι εντελώς αρχάριος είτε έχεις κάποιες βασικές γνώσεις, αυτό το βιβλίο θα σε καθοδηγήσει βήμα-βήμα.
+              Ανακάλυψε τον απόλυτο οδηγό προγραμματισμού στα ελληνικά! Αυτό το ψηφιακό βιβλίο είναι ιδανικό για αρχάριους και εξηγεί με απλό και κατανοητό τρόπο όλες τις βασικές αρχές που χρειάζεται να ξέρεις. Μέσα από πρακτικά παραδείγματα, ασκήσεις και πραγματικές εφαρμογές, θα μάθεις πώς να σκέφτεσαι σαν προγραμματιστής και να χτίζεις τις δικές σου εφαρμογές. Είναι μια μοναδική ευκαιρία να επενδύσεις στον εαυτό σου!
             </p>
             <div className="mt-8">
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-10 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105">
@@ -102,7 +101,7 @@ const BookPage = () => {
                 Αγόρασε το Βιβλίο
                 </a>
               </Button>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">Ηλεκτρονική μορφή (PDF).</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">Ηλεκτρονική μορφή 49 σελίδων (PDF).</p>
             </div>
           </motion.div>
         </div>

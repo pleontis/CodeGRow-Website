@@ -112,7 +112,7 @@ const PlaylistsPage = () => {
   <title>Playlists Προγραμματισμού CodeGrow</title>
   <meta
     name="description"
-    content="Ανακάλυψε όλες τις Playlists προγραμματισμού της CodeGrow. Μάθε Python, JavaScript, Java και άλλα με βήμα-βήμα tutorials στα ελληνικά."
+    content="Ανακάλυψε όλες τις Playlists προγραμματισμού του CodeGrow. Μάθε Python, JavaScript, Java και άλλα με βήμα-βήμα tutorials στα ελληνικά."
   />
   <meta
     name="keywords"
@@ -176,11 +176,10 @@ const PlaylistsPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
                 className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover flex flex-col"
-              >
-                <img  
-                  className="w-full h-48 object-cover"
-                  alt={playlist.imageText}
-                  src={playlist.imageUrl} />
+              > 
+                <Link to={`/playlists/${playlist.id}`}>
+                  <img className="w-full h-48 object-cover" alt={playlist.imageText} src={playlist.imageUrl} />
+                </Link>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-2 py-1 rounded-full">

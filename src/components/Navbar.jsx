@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Menu, X, Code, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
+import path from 'path';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,8 @@ const Navbar = () => {
     { path: '/', label: 'Αρχική' },
     { path: '/playlists', label: 'Playlists' },
     { path: '/book', label: 'Βιβλίο' },
-    { path: '/about', label: 'Σχετικά' },
+    { path: '/products', label: 'Προϊόντα'},
+    { path: '/about', label: 'Σχετικά' }
   ];
 
   return (

@@ -8,6 +8,8 @@ import PlaylistsPage from '@/pages/PlaylistsPage.jsx';
 import BookPage from '@/pages/BookPage.jsx';
 import PlaylistDetailPage from '@/pages/PlaylistDetailPage.jsx';
 import AboutPage from '@/pages/AboutPage.jsx';
+import ProductPage from './pages/ProductsPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import NotFoundPage from '@/pages/NotFoundPage.jsx';
 import ScrollToTop from '@/components/ScrollToTop';
 
@@ -32,6 +34,8 @@ function App() {
             <Route path="/playlists" element={<PlaylistsPage />} />
             <Route path="/playlists/:id" element={<PlaylistDetailPage />} />
             <Route path="/book" element={<BookPage />} />
+            <Route path="/products" element={<ProductPage />} />
+            <Route path="/products/:productId" element={<ProductDetailPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
