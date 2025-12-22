@@ -9,6 +9,8 @@ import cppLink from "../img/cpp.png";
 import cLink from "../img/c.png";
 import mongoLink from "../img/mongodb.png"
 import pythonLink from "../img/pythonLogo.png";
+import numpyLink from "../img/numpyLogo.png";
+import pandasLink from "../img/pandasLogo.png"
 import javaLink from "../img/javaLogo.png";
 import webDevLink from "../img/webDev.png";
 import jsLink from "../img/jsLogo.png";
@@ -27,6 +29,28 @@ const playlistsData = [
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbho-a-L6uZ9v_qxNQGc4aM8F&si=t53lKmDYaVtlBmwI"
   },
   { 
+    id: "numpy", 
+    title: "Βιβλιοθήκη NumPy", 
+    description: "Ολοκληρωμένη σειρά 8 βίντεο για να μάθεις τη βιβλιοθήκη NumPy της Python και να εμβαθύνεις στον κόσμο της επιστήμης δεδομένων.", 
+    category: "numpy", 
+    level: "Αρχάριοι", 
+    videos: 11, 
+    imageText: "Numpy logo with code background",
+    imageUrl: numpyLink,
+    youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhpJeejtXhicE2-qePRCDAnO&si=32-jymT0y_HESky1"
+  },
+  { 
+    id: "pandas", 
+    title: "Βιβλιοθήκη Pandas", 
+    description: "Ολοκληρωμένη σειρά 8 βίντεο για να μάθεις τη βιβλιοθήκη Pandas της Python και να χειρίζεσαι δεδομένα σαν επαγγελματίας.", 
+    category: "pandas", 
+    level: "Αρχάριοι", 
+    videos: 11, 
+    imageText: "Pandas logo with code background",
+    imageUrl: pandasLink,
+    youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbho-a-L6uZ9v_qxNQGc4aM8F&si=t53lKmDYaVtlBmwI"
+  },
+  { 
     id: "html-css", 
     title: "HTML & CSS", 
     description: "Μάθε τα θεμέλια του Web Development με 37 βίντεο για HTML και CSS.", 
@@ -36,6 +60,17 @@ const playlistsData = [
     imageText: "HTML5 and CSS3 logos",
     imageUrl: webDevLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhrjjZxVEAox1k1mTfYxMIZA&si=XggC-P8G_6oGitpp"
+  },
+    {
+    id:"javascript",
+    title:"Εκμάθηση JavaScript",
+    description:"Σειρά 80 βίντεο για να ξεκινήσεις το ταξίδι σου στον κόσμο της JavaScript και του Web Development.",
+    category:"JavaScript",
+    level: "Μέσο/Προχωρημένο",
+    videos:80,
+    imageText: "JavaScript logo",
+    imageUrl: jsLink,
+    youtubeLink: "https://www.youtube.com/playlist?list=PLLazhr7ULbhq8dq-pxbJCZJU2tRVro519"
   },
   { 
     id: "java", 
@@ -59,24 +94,13 @@ const playlistsData = [
     imageUrl: cLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhp24SFf7DXTaX_xo4e9kxbO&si=i575A72TUlAe29S6"
   },
-  {
-    id:"javascript",
-    title:"Εκμάθηση JavaScript",
-    description:"Σειρά 80 βίντεο για να ξεκινήσεις το ταξίδι σου στον κόσμο της JavaScript και του Web Development.",
-    category:"JavaScript",
-    level: "Μέσο/Προχωρημένο",
-    videos:80,
-    imageText: "JavaScript logo",
-    imageUrl: jsLink,
-    youtubeLink: "https://www.youtube.com/playlist?list=PLLazhr7ULbhq8dq-pxbJCZJU2tRVro519"
-  },
   { 
     id: "c++", 
     title: "Εκμάθηση C++", 
-    description: "Σειρά 40 βίντεο για να κατανοήσεις μια απο τις πιο ισχυρές γλώσσες προγραμματισμού, την C++.", 
+    description: "Σειρά 59 βίντεο για να κατανοήσεις μια απο τις πιο ισχυρές γλώσσες προγραμματισμού, την C++.", 
     category: "C++", 
     level: "Αρχάριοι/Μέσο", 
-    videos: 40, 
+    videos: 59, 
     imageText: "C++ language logo with circuit board",
     imageUrl: cppLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhrIKTQOG88CndlqkkM-gn2N&si=HMMYOaDPZGUWrV6I"

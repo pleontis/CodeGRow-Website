@@ -127,36 +127,35 @@ const AboutPage = () => {
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
 
-  <Button
-    asChild
-    size="lg"
-    className="bg-white hover:bg-gray-100 text-[hsl(var(--discord))] font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
-  >
-    <a
-      target='_blank'
-      href="https://discord.gg/SGqKSxCTUD"
-      className="inline-flex items-center justify-center"
-    >
-      <i className="fa-brands fa-discord w-5 mr-2"></i>
-      Μπες στον Discord Server
-    </a>
-  </Button>
+          <Button
+            asChild
+            size="lg"
+            className="bg-white hover:bg-gray-100 text-[hsl(var(--discord))] font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
+          >
+            <a
+              target='_blank'
+              href="https://discord.gg/SGqKSxCTUD"
+              className="inline-flex items-center justify-center"
+            >
+              <i className="fa-brands fa-discord w-5 mr-2"></i>
+              Μπες στον Discord Server
+            </a>
+          </Button>
 
-  <Button
-    asChild
-    size="lg"
-    variant="outline"
-    className="border-white hover:bg-white/20 font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
-  >
-    <a
-      target='_blank'
-      href="https://www.youtube.com/@CodeGRrow"
-      className="inline-flex items-center"
-    >
-      <YoutubeIcon className="mr-2 h-5 w-5 text-red-600" />
-      Επισκέψου το YouTube
-    </a>
-  </Button>
+          <Button
+            asChild
+            size="lg"
+            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
+          >
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@CodeGRrow"
+              className="inline-flex items-center"
+            >
+              <YoutubeIcon className="mr-2 h-5 w-5" />
+              Επισκέψου το YouTube
+            </a>
+          </Button>
 
 </div>
 

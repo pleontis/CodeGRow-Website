@@ -8,6 +8,8 @@ import cppLink from "../img/cpp.png";
 import cLink from "../img/c.png";
 import mongoLink from "../img/mongodb.png"
 import pythonLink from "../img/pythonLogo.png";
+import numpyLink from "../img/numpyLogo.png";
+import pandasLink from "../img/pandasLogo.png"
 import javaLink from "../img/javaLogo.png";
 import webDevLink from "../img/webDev.png";
 import jsLink from "../img/jsLogo.png";
@@ -27,6 +29,38 @@ const playlistsData = {
     imageUrl: pythonLink,
     longDescription: "Αυτή η ολοκληρωμένη σειρά 95 βίντεο καλύπτει τα πάντα για την Python, από τις βασικές έννοιες όπως μεταβλητές, τύπους δεδομένων και δομές ελέγχου, μέχρι πιο προχωρημένα θέματα όπως αντικειμενοστραφή προγραμματισμό, διαχείριση αρχείων, βιβλιοθήκες και πολλά άλλα. Ιδανική για αρχάριους αλλά και για όσους θέλουν να εμβαθύνουν τις γνώσεις τους.",
     playlistYoutubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbho-a-L6uZ9v_qxNQGc4aM8F&si=t53lKmDYaVtlBmwI"
+  },
+  numpy: { 
+    title: "Εκμάθηση Βιβλιοθήκης NumPy", 
+    description: "Ολοκληρωμένη σειρά 8 βίντεο για να μάθεις τη βιβλιοθήκη NumPy της Python και να εμβαθύνεις στον κόσμο της επιστήμης δεδομένων.",
+    category: "numpy", 
+    level: "Αρχάριοι", 
+    videosCount: 8,
+    videos: [
+      { id: 1, title: "Εισαγωγή & Εγκατάσταση", duration: "08:00", completed: false, youtubeLink: "https://youtu.be/iZQBIq1w3RU?si=WJZMyc7cJ9-tSanB"},
+      { id: 2, title: "Πολυδιάστατοι Πίνακες", duration: "13:00", completed: false, youtubeLink: "https://youtu.be/l5nuXjqf_Tc?si=Sb4gu_Ta7-ZlalDe" },
+      { id: 3, title: "Array Slicing", duration: "15:00", completed: false, youtubeLink: "https://youtu.be/3bF3HfD-9Wg?si=6Qw3LZ4qXLlxX3dL" },
+    ],
+    imageText: "Abstract numpy code visualization",
+    imageUrl: numpyLink,
+    longDescription: "Αυτή η σειρά 8 βίντεο είναι ο απόλυτος οδηγός για όποιον θέλει να ξεκινήσει ή να εμβαθύνει στον κόσμο της επιστήμης δεδομένων και της αριθμητικής υπολογιστικής με Python. Μέσα από κατανοητά βίντεο θα μάθεις: Τι είναι το NumPy και γιατί είναι τόσο σημαντικό για την Python. Πώς να δημιουργείς και να χειρίζεσαι πολυδιάστατους πίνακες (arrays). Βασικές και προχωρημένες λειτουργίες μαθηματικών και στατιστικών πάνω σε πίνακες.Τεχνικές για φιλτραρίσματα, indexing και slicing δεδομένων. Πώς να συνδυάζεις NumPy με άλλες βιβλιοθήκες για αποτελεσματικούς υπολογισμούς.",
+    playlistYoutubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhpJeejtXhicE2-qePRCDAnO&si=32-jymT0y_HESky1"
+  },
+   pandas: { 
+    title: "Εκμάθηση Βιβλιοθήκης Pandas", 
+    description: "Ολοκληρωμένη σειρά 8 βίντεο για να μάθεις τη βιβλιοθήκη Pandas της Python και να χειρίζεσαι δεδομένα σαν επαγγελματίας.",
+    category: "pandas", 
+    level: "Αρχάριοι", 
+    videosCount: 8,
+    videos: [
+      { id: 1, title: "Εισαγωγή & Εγκατάσταση", duration: "03:00", completed: false, youtubeLink: "https://youtu.be/De2TE0LCELQ"},
+      { id: 2, title: "Δημιουργία Series", duration: "14:00", completed: false, youtubeLink: "https://youtu.be/KkuBJoB8sLY" },
+      { id: 3, title: "Δημιουργία DataFrame", duration: "12:00", completed: false, youtubeLink: "https://youtu.be/yk7wvoaAmI8" },
+    ],
+    imageText: "Abstract pandas code visualization",
+    imageUrl: pandasLink,
+    longDescription: "Αυτή η σειρά 8 βίντεο είναι ο απόλυτος οδηγός για όποιον θέλει να να χειρίζεται δεδομένα σαν επαγγελματίας. Μέσα από πρακτικά και κατανοητά βίντεο θα μάθεις: Τι είναι η βιβλιοθήκη Pandas και γιατί είναι απαραίτητη για την ανάλυση δεδομένων με Python. Πώς να δημιουργείς, να διαχειρίζεσαι και να επεξεργάζεσαι DataFrames και Series. Τεχνικές για καθαρισμό, φιλτράρισμα και μετασχηματισμό δεδομένων. Πώς να κάνεις στατιστικές αναλύσεις και ομαδοποιήσεις δεδομένων. Συμβουλές για σύνδεση με αρχεία CSV, Excel και άλλες πηγές δεδομένων.",
+    playlistYoutubeLink: "https://www.youtube.com/playlist?list=PLLazhr7ULbhp3u6n8614Ucnk8GdPgD-Mi"
   },
   "html-css": { 
     title: "HTML & CSS", 
@@ -90,10 +124,10 @@ const playlistsData = {
   },
   "c++":{
     title: "Εκμάθηση C++",
-    description: "Σειρά 40 βίντεο για να κατανοήσεις μια απο τις πιο ισχυρές γλώσσες προγραμματισμού, την C++.", 
+    description: "Σειρά 59 βίντεο για να κατανοήσεις μια απο τις πιο ισχυρές γλώσσες προγραμματισμού, την C++.", 
     category: "C++", 
     level: "Αρχάριοι/Μέσο", 
-    videosCount: 40, 
+    videosCount: 59, 
     videos: [
       { id: 1, title: "Εισαγωγή | Hello World", duration: "15:30", completed: false, youtubeLink: "https://youtu.be/ewJETyqNxtI?si=aNw3kDXSo2Mv03Np"},
       { id: 2, title: "Μάθε τα πάντα για τις Μεταβλητές", duration: "16:00", completed: false, youtubeLink:"https://youtu.be/vUG1CMm-Z4c?si=cG1BmnJ3A6gyL0Cm" },],

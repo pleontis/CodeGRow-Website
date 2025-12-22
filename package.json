@@ -29,6 +29,7 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.16.0",
     "react-simple-typewriter": "^5.0.1",
+    "swiper": "^12.0.3",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"
   },
