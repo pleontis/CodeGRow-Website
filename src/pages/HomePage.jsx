@@ -127,8 +127,7 @@ const HomePage = () => {
                   asChild
                   variant="outline"
                   className="w-full 
-                            text-black dark:text-white
-                            "
+                            text-primary hover:text-white border-primary dark:text-primary"
                 >
                   <Link to={`/playlists/${playlist.id}`}>
                     <PlayCircle className="mr-2 h-5 w-5" />
