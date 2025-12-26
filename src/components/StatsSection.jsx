@@ -67,6 +67,7 @@ const StatCard = ({ stat, index }) => (
       relative rounded-2xl p-6
       bg-[hsl(var(--card)/0.6)]
       backdrop-blur-xl
+      dark:hover:shadow-[0_5px_32px_0_hsl(var(--primary)/0.35)]
       shadow-lg hover:shadow-2xl
       border border-white/5
       transition-all duration-300
