@@ -62,6 +62,7 @@
     @apply border-border;
   }
   body {
+    @apply font-sans;
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     transition: background-color 0.3s ease, color 0.3s ease;
