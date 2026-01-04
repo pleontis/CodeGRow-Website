@@ -34,7 +34,7 @@ const playlistsData = [
     description: "Ολοκληρωμένη σειρά 8 βίντεο για να μάθεις τη βιβλιοθήκη NumPy της Python και να εμβαθύνεις στον κόσμο της επιστήμης δεδομένων.", 
     category: "numpy", 
     level: "Αρχάριοι", 
-    videos: 11, 
+    videos: 8, 
     imageText: "Numpy logo with code background",
     imageUrl: numpyLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbhpJeejtXhicE2-qePRCDAnO&si=32-jymT0y_HESky1"
@@ -45,7 +45,7 @@ const playlistsData = [
     description: "Ολοκληρωμένη σειρά 8 βίντεο για να μάθεις τη βιβλιοθήκη Pandas της Python και να χειρίζεσαι δεδομένα σαν επαγγελματίας.", 
     category: "pandas", 
     level: "Αρχάριοι", 
-    videos: 11, 
+    videos: 8, 
     imageText: "Pandas logo with code background",
     imageUrl: pandasLink,
     youtubeLink: "https://youtube.com/playlist?list=PLLazhr7ULbho-a-L6uZ9v_qxNQGc4aM8F&si=t53lKmDYaVtlBmwI"
