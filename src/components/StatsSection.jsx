@@ -19,13 +19,13 @@ const stats = [
   },
   {
     label: "YouTube Subs",
-    value: "12.5K",
+    value: "13K",
     icon: <Youtube className="h-6 w-6" />,
     sub: "Απολαμβάνουν Δωρεάν Υλικό",
   },
   {
     label: "Full Courses",
-    value: "8+",
+    value: "10+",
     icon: <GraduationCap className="h-6 w-6" />,
     sub: "Πρακτικά & Δομημένα Μαθήματα"
   },
