@@ -229,15 +229,16 @@ const PlaylistDetailPage = () => {
               <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">{playlist.videosCount} βίντεο</p>
               <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">{playlist.longDescription || playlist.description}</p>
               <Button 
+                asChild
                 target="_blank"
                 rel="noopener noreferrer" 
                 size="lg" 
                 className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
                 >
-                <a href={playlist.playlistYoutubeLink} className="inline-flex items-center">
+                <Link to={playlist.playlistYoutubeLink} className="inline-flex items-center">
                 <Youtube className="mr-2 h-5 w-5" />
                 Παρακολούθηση στο YouTube
-                </a>
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -276,7 +277,7 @@ const PlaylistDetailPage = () => {
                   </div>
                   <div className="flex items-center flex-shrink-0">
                      {video.completed && <CheckSquare className="h-5 w-5 text-green-500 mr-3" />}
-                    <Button 
+                    <Button
                     target="_blank" 
                     rel="noopener noreferrer" 
                     variant="ghost" size="sm" 
@@ -297,14 +298,15 @@ const PlaylistDetailPage = () => {
                     className="text-center mt-6"
                 >
                   <Button
-                      target="_blank"
-                      variant="outline"
-                      className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground"
-                      >
-                    <a href={playlist.playlistYoutubeLink} className="inline-flex items-center">
+                    asChild
+                    target="_blank"
+                    variant="outline"
+                    className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground"
+                  >
+                    <Link to={playlist.playlistYoutubeLink} className="inline-flex items-center">
                       Δες όλα τα {playlist.videosCount} βίντεο στο YouTube
                       <Youtube className="ml-2 h-4 w-4" />
-                    </a>
+                    </Link>
                     </Button>
                 </motion.div>
                )}
