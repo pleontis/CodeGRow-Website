@@ -6,7 +6,7 @@ Welcome to the official repository for **CodeGRow**, a platform dedicated to fos
 
 ## 🚀 Live Demo
 
-👉 Comming Soon
+👉 www.codegrow.gr
 
 ---
 

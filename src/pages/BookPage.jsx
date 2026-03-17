@@ -2,9 +2,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Download, CheckCircle, BookOpen, Star } from 'lucide-react';
+import { Download, CheckCircle, BookOpen, Star, GraduationCap} from 'lucide-react';
 import bookURL from '../img/book.png';
 import { Helmet } from 'react-helmet';
+import { Link } from "react-router-dom";
 
 const BookPage = () => {
 
@@ -95,7 +96,7 @@ const BookPage = () => {
               Ανακάλυψε τον απόλυτο οδηγό προγραμματισμού στα ελληνικά! Αυτό το ψηφιακό βιβλίο είναι ιδανικό για αρχάριους και εξηγεί με απλό και κατανοητό τρόπο όλες τις βασικές αρχές που χρειάζεται να ξέρεις. Μέσα από πρακτικά παραδείγματα, ασκήσεις και πραγματικές εφαρμογές, θα μάθεις πώς να σκέφτεσαι σαν προγραμματιστής και να χτίζεις τις δικές σου εφαρμογές. Είναι μια μοναδική ευκαιρία να επενδύσεις στον εαυτό σου!
             </p>
             <div className="mt-8">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-10 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-white font-semibold px-10 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105">
                 <a target='_blank' className="inline-flex items-center justify-center" href="https://buy.stripe.com/bJe00jgSU8jb38b2Qj0kE00">
                 <Download className="mr-2 h-5 w-5" />
                 Αγόρασε το Βιβλίο
@@ -153,17 +154,19 @@ const BookPage = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Έτοιμος να ξεκινήσεις;</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
-            Επένδυσε στις γνώσεις σου και απόκτησε τις δεξιότητες που χρειάζεσαι για τον σύγχρονο κόσμο της τεχνολογίας. Γίνε μέλος της κοινότητάς μου στο Discord!
+            Επένδυσε στις γνώσεις σου και απόκτησε τις δεξιότητες που χρειάζεσαι για τον σύγχρονο κόσμο της τεχνολογίας. Λάβε εξειδικευμένη καθοδήγηση μέσω του Mentoring!
           </p>
+
           <Button
+            asChild
             size="lg"
             variant="discord"
-            className="font-semibold px-10 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 items-center justify-center"
+            className="font-semibold px-10 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105"
           >
-          <a target="_blank" href="https://discord.gg/SGqKSxCTUD" className="inline-flex items-center">
-          <i className="fa-brands fa-discord w-5 mr-2"></i>
-            Μπες στον Discord Server
-          </a>
+            <Link to="/mentoring" className="inline-flex items-center justify-center">
+              <GraduationCap className="w-5 h-5 mr-2" />
+              Μπες στο Mentoring
+            </Link>
           </Button>
         </motion.div>
       </div>

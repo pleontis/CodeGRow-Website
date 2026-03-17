@@ -6,7 +6,7 @@ import BookSliderSection from "@/components/BookSliderSection";
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Lightbulb, BookOpen, Users, PlayCircle } from 'lucide-react';
+import { Lightbulb, BookOpen, Users, PlayCircle, GraduationCap, UserCheck} from 'lucide-react';
 
 import pythonURL from '../img/python.jpg';
 import jsURL from '../img/js.jpg';
@@ -71,10 +71,10 @@ const HomePage = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold text-center mb-12"
           >
-            Τι θα βρεις στο <span className="gradient-text">CodeGrow</span>;
+            Τι θα βρεις στο <span className="gradient-text">CodeGRow</span>;
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <FeatureCard
               icon={<Lightbulb className="h-8 w-8" />}
               title="Κατανοητά Μαθήματα"
@@ -92,6 +92,12 @@ const HomePage = () => {
               title="Ενεργή Κοινότητα"
               description="Μέλη που μαθαίνουν και εξελίσσονται μαζί."
               delay={0.4}
+            />
+            <FeatureCard
+              icon={<GraduationCap className="h-8 w-8" />}
+              title="Mentoring"
+              description="Καθοδήγηση από έμπειρους developers για να εξελιχθείς πιο γρήγορα."
+              delay={0.5}
             />
           </div>
         </div>

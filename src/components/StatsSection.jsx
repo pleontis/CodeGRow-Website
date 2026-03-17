@@ -12,32 +12,32 @@ import {
 const stats = [
   {
     label: "Μέλη Κοινότητας",
-    value: "33K+",
+    value: "36K+",
     sub: "Σε όλες τις πλαρφόρμες",
     icon: <Users className="h-8 w-8" />,
     big: true,
   },
   {
     label: "YouTube Subs",
-    value: "13K",
+    value: "14K",
     icon: <Youtube className="h-6 w-6" />,
     sub: "Απολαμβάνουν Δωρεάν Υλικό",
   },
   {
     label: "Full Courses",
-    value: "10+",
+    value: "11+",
     icon: <GraduationCap className="h-6 w-6" />,
     sub: "Πρακτικά & Δομημένα Μαθήματα"
   },
   {
     label: "YouTube Videos",
-    value: "750+",
+    value: "800+",
     icon: <Video className="h-6 w-6" />,
     sub: "Δωρεάν Tutorials Προγραμματισμού",
   },
   {
     label: "TikTok",
-    value: "20K",
+    value: "22K",
     icon: (<i className="fa-brands fa-tiktok text-2xl text-[hsl(var(--accent))]" />),
     sub: "Καθημερινά tips προγραμματισμού"
   },
@@ -49,7 +49,7 @@ const stats = [
   },
   {
     label: "Discord",
-    value: "1100+",
+    value: "1200+",
     icon: <MessageCircle className="h-6 w-6" />,
     sub: "Μέλη συζητάνε καθημερινά",
   },
@@ -64,7 +64,7 @@ const StatCard = ({ stat, index }) => (
     transition={{ duration: 0.4, delay: index * 0.08 }}
     whileHover={{ y: -6, scale: 1.02 }}
     className={`
-      relative rounded-2xl p-6
+      relative rounded-2xl p-3 md:p-6
       bg-[hsl(var(--card)/0.6)]
       backdrop-blur-xl
       dark:hover:shadow-[0_5px_32px_0_hsl(var(--primary)/0.35)]
@@ -74,20 +74,20 @@ const StatCard = ({ stat, index }) => (
       ${stat.big ? "md:col-span-2" : ""}
     `}
   >
-    <div className="flex items-center gap-4 mb-4 text-[hsl(var(--accent))]">
-      <div className="p-3 rounded-xl bg-[hsl(var(--accent)/0.15)]">
+    <div className="flex items-center gap-2 md:gap-4 mb-4 text-[hsl(var(--accent))]">
+      <div className="p-2 md:p-3 rounded-xl bg-[hsl(var(--accent)/0.15)]">
         {stat.icon}
       </div>
-      <div>
-        <h3 className="text-sm text-muted-foreground">{stat.label}</h3>
-        <p className="text-3xl font-bold text-foreground">
+      <div className="min-w-0">
+        <h3 className="text-xs md:text-sm text-muted-foreground truncate">{stat.label}</h3>
+        <p className="text-xl md:text-3xl font-bold text-foreground">
           {stat.value}
         </p>
       </div>
     </div>
 
     {stat.sub && (
-      <p className="text-sm text-muted-foreground">{stat.sub}</p>
+      <p className="text-xs md:text-sm text-muted-foreground line-clamp-2">{stat.sub}</p>
     )}
 
     {/* glow effect */}
@@ -99,7 +99,7 @@ const StatCard = ({ stat, index }) => (
 
 const StatsSection = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-8 md:pt-12 pb-16 md:pb-24">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -122,7 +122,7 @@ const StatsSection = () => {
           courses και την κοινότητά μας.
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <StatCard key={index} stat={stat} index={index} />
           ))}

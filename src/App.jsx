@@ -8,6 +8,7 @@ import PlaylistsPage from '@/pages/PlaylistsPage.jsx';
 import BookPage from '@/pages/BookPage.jsx';
 import PlaylistDetailPage from '@/pages/PlaylistDetailPage.jsx';
 import AboutPage from '@/pages/AboutPage.jsx';
+import MentoringPage from '@/pages/MentoringPage.jsx';
 import ProductPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import NotFoundPage from '@/pages/NotFoundPage.jsx';
@@ -36,6 +37,7 @@ function App() {
             <Route path="/book" element={<BookPage />} />
             <Route path="/products" element={<ProductPage />} />
             <Route path="/products/:productId" element={<ProductDetailPage />} />
+            <Route path="/mentoring" element={<MentoringPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

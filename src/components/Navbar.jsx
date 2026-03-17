@@ -30,6 +30,7 @@ const Navbar = () => {
     { path: '/', label: 'Αρχική' },
     { path: '/playlists', label: 'Playlists' },
     { path: '/book', label: 'Βιβλίο' },
+    { path: '/mentoring', label: 'Mentoring' },
     { path: '/products', label: 'Προϊόντα'},
     { path: '/about', label: 'Σχετικά' }
   ];

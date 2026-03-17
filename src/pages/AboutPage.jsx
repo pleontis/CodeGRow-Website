@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, Zap, Target, Heart, Code, Youtube as YoutubeIcon } from 'lucide-react';
+import { Users, Zap, Target, Heart, Code, Youtube as YoutubeIcon, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import imgUrl from '../img/IMG_4547.png';
@@ -80,17 +80,92 @@ const AboutPage = () => {
           </motion.div>
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+          className="
+            bg-white dark:bg-gray-800 
+            border-2 border-primary/30 
+            hover:border-primary 
+            p-8 md:p-12 rounded-xl 
+            shadow-lg 
+            text-center 
+            transition-all duration-300 
+            hover:shadow-[0_0_25px_hsl(var(--primary)/0.25)]
+            hover:-translate-y-1
+          "
+        >
+          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+            Γίνε Μέλος της Κοινότητας
+          </h2>
+
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+            Είτε ξεκινάς τώρα είτε έχεις εμπειρία, μπορείς να μάθεις, να ρωτήσεις και να εξελιχθείς μαζί μας.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300"
+            >
+              <Link
+                to="/mentoring"
+                className="inline-flex items-center"
+              >
+                <GraduationCap className="mr-2 h-5 w-5" />
+                Mentoring
+              </Link>
+            </Button>
+
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#5865F2] hover:bg-[#4752C4] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition-all duration-300 hover:scale-105"
+            >
+              <a
+                target="_blank"
+                href="https://discord.gg/SGqKSxCTUD"
+                className="inline-flex items-center justify-center"
+              >
+                <i className="fa-brands fa-discord mr-2 h-5 w-5"></i>
+                Discord Community
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300"
+            >
+              <a
+                target="_blank"
+                href="https://www.youtube.com/@CodeGRrow"
+                className="inline-flex items-center"
+              >
+                <YoutubeIcon className="mr-2 h-5 w-5" />
+                YouTube
+              </a>
+            </Button>
+
+          </div>
+        </motion.div>
+
         <motion.section
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.2 }}
-          className="mb-20"
+          className="mt-20 mb-5"
         >
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
             Οι <span className="gradient-text">Αξίες</span> μου
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: <Zap className="h-8 w-8 text-yellow-500" />, title: "Προσβασιμότητα", description: "Πιστεύω ότι η εκπαίδευση στον προγραμματισμό πρέπει να είναι διαθέσιμη σε όλους." },
               { icon: <Target className="h-8 w-8 text-green-500" />, title: "Ποιότητα", description: "Δεσμεύομαι να παρέχω υψηλής ποιότητας, ακριβές και ενημερωμένο περιεχόμενο." },
@@ -103,63 +178,21 @@ const AboutPage = () => {
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 }
                 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg text-center card-hover"
+                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg text-center flex flex-col items-center"
               >
-                <div className="p-3 bg-primary/10 rounded-full inline-block mb-4">
+                <div className="p-3 bg-primary/10 rounded-full flex items-center justify-center mb-4 w-fit">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{value.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{value.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white break-words text-center">
+                  {value.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm text-center break-words">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </div>
         </motion.section>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-          className="bg-gradient-to-r from-[hsl(var(--discord))] to-[hsl(var(--discord)/0.85)] text-discord-foreground p-8 md:p-12 rounded-xl shadow-xl text-center"
-        >
-          <h2 className="text-3xl font-bold mb-4">Γίνε Μέλος της Κοινότητάς μου</h2>
-          <p className="text-lg mb-6 max-w-2xl mx-auto">
-            Είτε είσαι αρχάριος που κάνει τα πρώτα του βήματα, είτε έμπειρος προγραμματιστής που θέλει να μοιραστεί τις γνώσεις του, υπάρχει θέση για σένα στην κοινότητά μου στο Discord!
-          </p>
-          <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
-
-          <Button
-            asChild
-            size="lg"
-            className="bg-white hover:bg-gray-100 text-[hsl(var(--discord))] font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
-          >
-            <a
-              target='_blank'
-              href="https://discord.gg/SGqKSxCTUD"
-              className="inline-flex items-center justify-center"
-            >
-              <i className="fa-brands fa-discord w-5 mr-2"></i>
-              Μπες στον Discord Server
-            </a>
-          </Button>
-
-          <Button
-            asChild
-            size="lg"
-            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105"
-          >
-            <a
-              target="_blank"
-              href="https://www.youtube.com/@CodeGRrow"
-              className="inline-flex items-center"
-            >
-              <YoutubeIcon className="mr-2 h-5 w-5" />
-              Επισκέψου το YouTube
-            </a>
-          </Button>
-
-</div>
-
-        </motion.div>
       </div>
     </div>
   );

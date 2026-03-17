@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="text-sm text-gray-400 dark:text-gray-500">
               Μαθαίνω προγραμματισμό στα ελληνικά. Απλά και κατανοητά.
             </p>
-            <br />
+            <br/>
             <a href="mailto:contact@codegrow.gr" target='_blank' className="text-sm text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
               contact@codegrow.gr
             </a>
@@ -28,6 +28,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/playlists" className="hover:text-primary transition-colors">Playlists</Link></li>
               <li><Link to="/book" className="hover:text-primary transition-colors">Το Βιβλίο μου</Link></li>
+              <li><Link to="/mentoring" className="hover:text-primary transition-colors">Κλείσε Mentoring</Link></li>
               <li><Link to="/products" className="hover:text-primary transition-colors">Ψηφιακά Προϊόντα</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">Σχετικά με Εμένα</Link></li>
             </ul>
