@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Youtube, Linkedin, Mail} from 'lucide-react';
+import { Code, Youtube, Linkedin} from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -80,6 +80,15 @@ const Footer = () => {
                 aria-label="CodeGRow Discord Server"
               >
                 <i className="fa-brands fa-discord w-5 text-black-500"></i>
+              </a>
+              <a 
+                href="https://open.spotify.com/show/3vtQHH5Zal3qsNVzEzeGfj?si=82cb93136b57465e"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-green-500 transition-colors"
+                aria-label="CodeGRow Discord Server"
+              >
+                <i className="fa-brands fa-spotify text-black-500"></i>
               </a>
             </div>
           </div>

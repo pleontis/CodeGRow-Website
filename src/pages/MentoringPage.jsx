@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { Check, MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import TestimonialsSection from "@/components/TestimonialSection";
 
 // Add CSS for animated border
 if (typeof window !== 'undefined') {
@@ -498,6 +499,8 @@ I am interested in booking this mentoring package.
             </p>
           </div>
         </div>
+
+        <TestimonialsSection />
 
         {/* Info Section */}
         <motion.div
